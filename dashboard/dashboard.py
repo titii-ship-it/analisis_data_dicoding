@@ -6,7 +6,7 @@ import streamlit as st
 sns.set(style='dark')
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("main_data.csv")
 
 # Mengubah kolom tahun, bulan, hari, dan jam menjadi kolom datetime untuk analisis waktu
 all_df['datetime'] = pd.to_datetime(all_df[['year', 'month', 'day', 'hour']])
